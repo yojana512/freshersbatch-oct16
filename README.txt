@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+Hey buddies!!
 Hey how are you?
 I really missed you!!
 =======
