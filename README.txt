@@ -3,4 +3,5 @@ Hey how are you?
 I really missed you!!
 =======
 Hey whatsapp!
->>>>>>> css-assignments
+Hyderabad is an amazing city...
+>>>>>>> js-assignments
