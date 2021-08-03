@@ -1,0 +1,2764 @@
+Microsoft Windows [Version 10.0.19042.1110]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Yojana\Desktop\MongoDB\mongodb-win32-x86_64-windows-5.0.1\bin>mongoimport C:\Users\Yojana\Desktop\Assignment Mongo\zip.json -d population -c zipcodes --drop
+2021-08-02T15:56:55.061+0530    error parsing command line options: error parsing positional arguments: provide only one file name and only one MongoDB connection string. Connection strings must begin with mongodb:// or mongodb+srv:// schemes
+2021-08-02T15:56:55.061+0530    try 'mongoimport --help' for more information
+
+C:\Users\Yojana\Desktop\MongoDB\mongodb-win32-x86_64-windows-5.0.1\bin>mongoimport C:\Users\Yojana\Desktop\json\zip.json -d population -c zipcodes --drop
+2021-08-02T15:59:05.769+0530    connected to: mongodb://localhost/
+2021-08-02T15:59:05.769+0530    dropping: population.zipcodes
+2021-08-02T15:59:06.101+0530    29353 document(s) imported successfully. 0 document(s) failed to import.
+
+C:\Users\Yojana\Desktop\MongoDB\mongodb-win32-x86_64-windows-5.0.1\bin>mongo
+MongoDB shell version v5.0.1
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("c90417e3-682e-4faf-84f7-5761dd68892e") }
+MongoDB server version: 5.0.1
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+We recommend you begin using "mongosh".
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-08-02T15:54:44.824+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+        2021-08-02T15:54:44.824+05:30: This server is bound to localhost. Remote systems will be unable to connect to this server. Start the server with --bind_ip <address> to specify which IP addresses it should serve responses from, or with --bind_ip_all to bind to all interfaces. If this behavior is desired, start the server with --bind_ip 127.0.0.1 to disable this warning
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs;
+admin           0.000GB
+config          0.000GB
+local           0.000GB
+mongo_practice  0.000GB
+population      0.000GB
+
+......................................................................................................................................................................................................................................................................................................................................................
+
+
+db.zipcodes.find({"city":"ATLANTA","state":"GA"}).pretty();
+
+{
+    "_id" : "30303",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.388846, 
+        33.752504
+    ],
+    "pop" : 1845,
+    "state" : "GA"
+}
+
+/* 2 */
+{
+    "_id" : "30305",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.385145, 
+        33.831963
+    ],
+    "pop" : 19122,
+    "state" : "GA"
+}
+
+/* 3 */
+{
+    "_id" : "30306",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.351418, 
+        33.786027
+    ],
+    "pop" : 20081,
+    "state" : "GA"
+}
+
+/* 4 */
+{
+    "_id" : "30307",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.335957, 
+        33.769138
+    ],
+    "pop" : 16330,
+    "state" : "GA"
+}
+
+/* 5 */
+{
+    "_id" : "30308",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.375744, 
+        33.771839
+    ],
+    "pop" : 8549,
+    "state" : "GA"
+}
+
+/* 6 */
+{
+    "_id" : "30309",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.388338, 
+        33.798407
+    ],
+    "pop" : 14766,
+    "state" : "GA"
+}
+
+/* 7 */
+{
+    "_id" : "30310",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.423173, 
+        33.727849
+    ],
+    "pop" : 34017,
+    "state" : "GA"
+}
+
+/* 8 */
+{
+    "_id" : "30311",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.470219, 
+        33.722957
+    ],
+    "pop" : 34880,
+    "state" : "GA"
+}
+
+/* 9 */
+{
+    "_id" : "30312",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.378125, 
+        33.746749
+    ],
+    "pop" : 17683,
+    "state" : "GA"
+}
+
+/* 10 */
+{
+    "_id" : "30313",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.39352, 
+        33.76825
+    ],
+    "pop" : 8038,
+    "state" : "GA"
+}
+
+/* 11 */
+{
+    "_id" : "30324",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.354867, 
+        33.820609
+    ],
+    "pop" : 15044,
+    "state" : "GA"
+}
+
+/* 12 */
+{
+    "_id" : "30326",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.358232, 
+        33.848168
+    ],
+    "pop" : 125,
+    "state" : "GA"
+}
+
+/* 13 */
+{
+    "_id" : "30316",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.333913, 
+        33.721686
+    ],
+    "pop" : 34668,
+    "state" : "GA"
+}
+
+/* 14 */
+{
+    "_id" : "30319",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.335091, 
+        33.868728
+    ],
+    "pop" : 32138,
+    "state" : "GA"
+}
+
+/* 15 */
+{
+    "_id" : "30327",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.419966, 
+        33.862723
+    ],
+    "pop" : 18467,
+    "state" : "GA"
+}
+
+/* 16 */
+{
+    "_id" : "30329",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.321402, 
+        33.823555
+    ],
+    "pop" : 17013,
+    "state" : "GA"
+}
+
+/* 17 */
+{
+    "_id" : "30331",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.520468, 
+        33.72241
+    ],
+    "pop" : 38185,
+    "state" : "GA"
+}
+
+/* 18 */
+{
+    "_id" : "30330",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.434735, 
+        33.70645
+    ],
+    "pop" : 643,
+    "state" : "GA"
+}
+
+/* 19 */
+{
+    "_id" : "30334",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.388188, 
+        33.74715
+    ],
+    "pop" : 0,
+    "state" : "GA"
+}
+
+/* 20 */
+{
+    "_id" : "30336",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.510028, 
+        33.78534
+    ],
+    "pop" : 1228,
+    "state" : "GA"
+}
+
+/* 21 */
+{
+    "_id" : "30317",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.31685, 
+        33.749788
+    ],
+    "pop" : 16395,
+    "state" : "GA"
+}
+
+/* 22 */
+{
+    "_id" : "30318",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.445432, 
+        33.786454
+    ],
+    "pop" : 53894,
+    "state" : "GA"
+}
+
+/* 23 */
+{
+    "_id" : "30314",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.425546, 
+        33.756103
+    ],
+    "pop" : 26649,
+    "state" : "GA"
+}
+
+/* 24 */
+{
+    "_id" : "30345",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.286961, 
+        33.851347
+    ],
+    "pop" : 19825,
+    "state" : "GA"
+}
+
+/* 25 */
+{
+    "_id" : "30346",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.333354, 
+        33.926717
+    ],
+    "pop" : 18,
+    "state" : "GA"
+}
+
+/* 26 */
+{
+    "_id" : "30349",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.481258, 
+        33.605331
+    ],
+    "pop" : 48116,
+    "state" : "GA"
+}
+
+/* 27 */
+{
+    "_id" : "30315",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.380771, 
+        33.705062
+    ],
+    "pop" : 41061,
+    "state" : "GA"
+}
+
+/* 28 */
+{
+    "_id" : "30360",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.271645, 
+        33.937772
+    ],
+    "pop" : 16023,
+    "state" : "GA"
+}
+
+/* 29 */
+{
+    "_id" : "30339",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.462879, 
+        33.87125
+    ],
+    "pop" : 11158,
+    "state" : "GA"
+}
+
+/* 30 */
+{
+    "_id" : "30342",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.376091, 
+        33.884245
+    ],
+    "pop" : 19057,
+    "state" : "GA"
+}
+
+/* 31 */
+{
+    "_id" : "30350",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.341146, 
+        33.979471
+    ],
+    "pop" : 24573,
+    "state" : "GA"
+}
+
+
+
+db.zipcodes.aggregate([{$match:{$and:[{"city":"ATLANTA"},{"state":"GA"}]}}])
+
+/* 1 */
+{
+    "_id" : "30303",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.388846, 
+        33.752504
+    ],
+    "pop" : 1845,
+    "state" : "GA"
+}
+
+/* 2 */
+{
+    "_id" : "30305",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.385145, 
+        33.831963
+    ],
+    "pop" : 19122,
+    "state" : "GA"
+}
+
+/* 3 */
+{
+    "_id" : "30306",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.351418, 
+        33.786027
+    ],
+    "pop" : 20081,
+    "state" : "GA"
+}
+
+/* 4 */
+{
+    "_id" : "30307",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.335957, 
+        33.769138
+    ],
+    "pop" : 16330,
+    "state" : "GA"
+}
+
+/* 5 */
+{
+    "_id" : "30308",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.375744, 
+        33.771839
+    ],
+    "pop" : 8549,
+    "state" : "GA"
+}
+
+/* 6 */
+{
+    "_id" : "30309",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.388338, 
+        33.798407
+    ],
+    "pop" : 14766,
+    "state" : "GA"
+}
+
+/* 7 */
+{
+    "_id" : "30310",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.423173, 
+        33.727849
+    ],
+    "pop" : 34017,
+    "state" : "GA"
+}
+
+/* 8 */
+{
+    "_id" : "30311",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.470219, 
+        33.722957
+    ],
+    "pop" : 34880,
+    "state" : "GA"
+}
+
+/* 9 */
+{
+    "_id" : "30312",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.378125, 
+        33.746749
+    ],
+    "pop" : 17683,
+    "state" : "GA"
+}
+
+/* 10 */
+{
+    "_id" : "30313",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.39352, 
+        33.76825
+    ],
+    "pop" : 8038,
+    "state" : "GA"
+}
+
+/* 11 */
+{
+    "_id" : "30324",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.354867, 
+        33.820609
+    ],
+    "pop" : 15044,
+    "state" : "GA"
+}
+
+/* 12 */
+{
+    "_id" : "30326",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.358232, 
+        33.848168
+    ],
+    "pop" : 125,
+    "state" : "GA"
+}
+
+/* 13 */
+{
+    "_id" : "30316",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.333913, 
+        33.721686
+    ],
+    "pop" : 34668,
+    "state" : "GA"
+}
+
+/* 14 */
+{
+    "_id" : "30319",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.335091, 
+        33.868728
+    ],
+    "pop" : 32138,
+    "state" : "GA"
+}
+
+/* 15 */
+{
+    "_id" : "30327",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.419966, 
+        33.862723
+    ],
+    "pop" : 18467,
+    "state" : "GA"
+}
+
+/* 16 */
+{
+    "_id" : "30329",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.321402, 
+        33.823555
+    ],
+    "pop" : 17013,
+    "state" : "GA"
+}
+
+/* 17 */
+{
+    "_id" : "30331",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.520468, 
+        33.72241
+    ],
+    "pop" : 38185,
+    "state" : "GA"
+}
+
+/* 18 */
+{
+    "_id" : "30330",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.434735, 
+        33.70645
+    ],
+    "pop" : 643,
+    "state" : "GA"
+}
+
+/* 19 */
+{
+    "_id" : "30334",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.388188, 
+        33.74715
+    ],
+    "pop" : 0,
+    "state" : "GA"
+}
+
+/* 20 */
+{
+    "_id" : "30336",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.510028, 
+        33.78534
+    ],
+    "pop" : 1228,
+    "state" : "GA"
+}
+
+/* 21 */
+{
+    "_id" : "30317",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.31685, 
+        33.749788
+    ],
+    "pop" : 16395,
+    "state" : "GA"
+}
+
+/* 22 */
+{
+    "_id" : "30318",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.445432, 
+        33.786454
+    ],
+    "pop" : 53894,
+    "state" : "GA"
+}
+
+/* 23 */
+{
+    "_id" : "30314",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.425546, 
+        33.756103
+    ],
+    "pop" : 26649,
+    "state" : "GA"
+}
+
+/* 24 */
+{
+    "_id" : "30345",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.286961, 
+        33.851347
+    ],
+    "pop" : 19825,
+    "state" : "GA"
+}
+
+/* 25 */
+{
+    "_id" : "30346",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.333354, 
+        33.926717
+    ],
+    "pop" : 18,
+    "state" : "GA"
+}
+
+/* 26 */
+{
+    "_id" : "30349",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.481258, 
+        33.605331
+    ],
+    "pop" : 48116,
+    "state" : "GA"
+}
+
+/* 27 */
+{
+    "_id" : "30315",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.380771, 
+        33.705062
+    ],
+    "pop" : 41061,
+    "state" : "GA"
+}
+
+/* 28 */
+{
+    "_id" : "30360",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.271645, 
+        33.937772
+    ],
+    "pop" : 16023,
+    "state" : "GA"
+}
+
+/* 29 */
+{
+    "_id" : "30339",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.462879, 
+        33.87125
+    ],
+    "pop" : 11158,
+    "state" : "GA"
+}
+
+/* 30 */
+{
+    "_id" : "30342",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.376091, 
+        33.884245
+    ],
+    "pop" : 19057,
+    "state" : "GA"
+}
+
+/* 31 */
+{
+    "_id" : "30350",
+    "city" : "ATLANTA",
+    "loc" : [ 
+        -84.341146, 
+        33.979471
+    ],
+    "pop" : 24573,
+    "state" : "GA"
+}
+
+
+db.zipcodes.aggregate([
+{$match: {city:"ATLANTA"}},
+{$group:{_id:"$loc" }},{$count:"loc"}])
+{
+    "loc" : 41
+}
+
+db.zipcodes.aggregate([
+{$match: {city:"ATLANTA"}},
+{$group:{_id:"$city" ,totalpop: {$sum:"$pop"}}}
+])
+
+{
+    "_id" : "ATLANTA",
+    "totalpop" : 630046
+}
+
+db.zipcodes.aggregate([
+
+{$group:{_id:"$state" ,totalpop: {$sum:"$pop"}}}
+])
+
+/* 1 */
+{
+    "_id" : "DE",
+    "totalpop" : 666168
+}
+
+/* 2 */
+{
+    "_id" : "MI",
+    "totalpop" : 9295297
+}
+
+/* 3 */
+{
+    "_id" : "ID",
+    "totalpop" : 1006749
+}
+
+/* 4 */
+{
+    "_id" : "IN",
+    "totalpop" : 5544136
+}
+
+/* 5 */
+{
+    "_id" : "MT",
+    "totalpop" : 798948
+}
+
+/* 6 */
+{
+    "_id" : "UT",
+    "totalpop" : 1722850
+}
+
+/* 7 */
+{
+    "_id" : "GA",
+    "totalpop" : 6478216
+}
+
+/* 8 */
+{
+    "_id" : "AL",
+    "totalpop" : 4040587
+}
+
+/* 9 */
+{
+    "_id" : "SD",
+    "totalpop" : 695397
+}
+
+/* 10 */
+{
+    "_id" : "MS",
+    "totalpop" : 2573216
+}
+
+/* 11 */
+{
+    "_id" : "NV",
+    "totalpop" : 1201833
+}
+
+/* 12 */
+{
+    "_id" : "OK",
+    "totalpop" : 3145585
+}
+
+/* 13 */
+{
+    "_id" : "HI",
+    "totalpop" : 1108229
+}
+
+/* 14 */
+{
+    "_id" : "WY",
+    "totalpop" : 453528
+}
+
+/* 15 */
+{
+    "_id" : "AZ",
+    "totalpop" : 3665228
+}
+
+/* 16 */
+{
+    "_id" : "WA",
+    "totalpop" : 4866692
+}
+
+/* 17 */
+{
+    "_id" : "VT",
+    "totalpop" : 562758
+}
+
+/* 18 */
+{
+    "_id" : "ND",
+    "totalpop" : 638272
+}
+
+/* 19 */
+{
+    "_id" : "MO",
+    "totalpop" : 5110648
+}
+
+/* 20 */
+{
+    "_id" : "AK",
+    "totalpop" : 544698
+}
+
+/* 21 */
+{
+    "_id" : "MN",
+    "totalpop" : 4372982
+}
+
+/* 22 */
+{
+    "_id" : "AR",
+    "totalpop" : 2350725
+}
+
+/* 23 */
+{
+    "_id" : "ME",
+    "totalpop" : 1226648
+}
+
+/* 24 */
+{
+    "_id" : "FL",
+    "totalpop" : 12686644
+}
+
+/* 25 */
+{
+    "_id" : "KS",
+    "totalpop" : 2475285
+}
+
+/* 26 */
+{
+    "_id" : "PA",
+    "totalpop" : 11881643
+}
+
+/* 27 */
+{
+    "_id" : "NJ",
+    "totalpop" : 7730188
+}
+
+/* 28 */
+{
+    "_id" : "NH",
+    "totalpop" : 1109252
+}
+
+/* 29 */
+{
+    "_id" : "CA",
+    "totalpop" : 29754890
+}
+
+/* 30 */
+{
+    "_id" : "CT",
+    "totalpop" : 3287116
+}
+
+/* 31 */
+{
+    "_id" : "NY",
+    "totalpop" : 17990402
+}
+
+/* 32 */
+{
+    "_id" : "WV",
+    "totalpop" : 1793146
+}
+
+/* 33 */
+{
+    "_id" : "NE",
+    "totalpop" : 1578139
+}
+
+/* 34 */
+{
+    "_id" : "OR",
+    "totalpop" : 2842321
+}
+
+/* 35 */
+{
+    "_id" : "RI",
+    "totalpop" : 1003218
+}
+
+/* 36 */
+{
+    "_id" : "VA",
+    "totalpop" : 6181479
+}
+
+/* 37 */
+{
+    "_id" : "MD",
+    "totalpop" : 4781379
+}
+
+/* 38 */
+{
+    "_id" : "LA",
+    "totalpop" : 4217595
+}
+
+/* 39 */
+{
+    "_id" : "NC",
+    "totalpop" : 6628637
+}
+
+/* 40 */
+{
+    "_id" : "TX",
+    "totalpop" : 16984601
+}
+
+/* 41 */
+{
+    "_id" : "NM",
+    "totalpop" : 1515069
+}
+
+/* 42 */
+{
+    "_id" : "IA",
+    "totalpop" : 2776420
+}
+
+/* 43 */
+{
+    "_id" : "WI",
+    "totalpop" : 4891769
+}
+
+/* 44 */
+{
+    "_id" : "IL",
+    "totalpop" : 11427576
+}
+
+/* 45 */
+{
+    "_id" : "CO",
+    "totalpop" : 3293755
+}
+
+/* 46 */
+{
+    "_id" : "MA",
+    "totalpop" : 6016425
+}
+
+/* 47 */
+{
+    "_id" : "TN",
+    "totalpop" : 4876457
+}
+
+/* 48 */
+{
+    "_id" : "KY",
+    "totalpop" : 3675484
+}
+
+/* 49 */
+{
+    "_id" : "DC",
+    "totalpop" : 606900
+}
+
+/* 50 */
+{
+    "_id" : "SC",
+    "totalpop" : 3486703
+}
+
+db.zipcodes.aggregate([
+
+{$group:{_id:"$state" ,totalpop: {$sum:"$pop"}}},
+{$sort:{"totalpop": -1}}])
+
+/* 1 */
+{
+    "_id" : "CA",
+    "totalpop" : 29754890
+}
+
+/* 2 */
+{
+    "_id" : "NY",
+    "totalpop" : 17990402
+}
+
+/* 3 */
+{
+    "_id" : "TX",
+    "totalpop" : 16984601
+}
+
+/* 4 */
+{
+    "_id" : "FL",
+    "totalpop" : 12686644
+}
+
+/* 5 */
+{
+    "_id" : "PA",
+    "totalpop" : 11881643
+}
+
+/* 6 */
+{
+    "_id" : "IL",
+    "totalpop" : 11427576
+}
+
+/* 7 */
+{
+    "_id" : "OH",
+    "totalpop" : 10846517
+}
+
+/* 8 */
+{
+    "_id" : "MI",
+    "totalpop" : 9295297
+}
+
+/* 9 */
+{
+    "_id" : "NJ",
+    "totalpop" : 7730188
+}
+
+/* 10 */
+{
+    "_id" : "NC",
+    "totalpop" : 6628637
+}
+
+/* 11 */
+{
+    "_id" : "GA",
+    "totalpop" : 6478216
+}
+
+/* 12 */
+{
+    "_id" : "VA",
+    "totalpop" : 6181479
+}
+
+/* 13 */
+{
+    "_id" : "MA",
+    "totalpop" : 6016425
+}
+
+/* 14 */
+{
+    "_id" : "IN",
+    "totalpop" : 5544136
+}
+
+/* 15 */
+{
+    "_id" : "MO",
+    "totalpop" : 5110648
+}
+
+/* 16 */
+{
+    "_id" : "WI",
+    "totalpop" : 4891769
+}
+
+/* 17 */
+{
+    "_id" : "TN",
+    "totalpop" : 4876457
+}
+
+/* 18 */
+{
+    "_id" : "WA",
+    "totalpop" : 4866692
+}
+
+/* 19 */
+{
+    "_id" : "MD",
+    "totalpop" : 4781379
+}
+
+/* 20 */
+{
+    "_id" : "MN",
+    "totalpop" : 4372982
+}
+
+/* 21 */
+{
+    "_id" : "LA",
+    "totalpop" : 4217595
+}
+
+/* 22 */
+{
+    "_id" : "AL",
+    "totalpop" : 4040587
+}
+
+/* 23 */
+{
+    "_id" : "KY",
+    "totalpop" : 3675484
+}
+
+/* 24 */
+{
+    "_id" : "AZ",
+    "totalpop" : 3665228
+}
+
+/* 25 */
+{
+    "_id" : "SC",
+    "totalpop" : 3486703
+}
+
+/* 26 */
+{
+    "_id" : "CO",
+    "totalpop" : 3293755
+}
+
+/* 27 */
+{
+    "_id" : "CT",
+    "totalpop" : 3287116
+}
+
+/* 28 */
+{
+    "_id" : "OK",
+    "totalpop" : 3145585
+}
+
+/* 29 */
+{
+    "_id" : "OR",
+    "totalpop" : 2842321
+}
+
+/* 30 */
+{
+    "_id" : "IA",
+    "totalpop" : 2776420
+}
+
+/* 31 */
+{
+    "_id" : "MS",
+    "totalpop" : 2573216
+}
+
+/* 32 */
+{
+    "_id" : "KS",
+    "totalpop" : 2475285
+}
+
+/* 33 */
+{
+    "_id" : "AR",
+    "totalpop" : 2350725
+}
+
+/* 34 */
+{
+    "_id" : "WV",
+    "totalpop" : 1793146
+}
+
+/* 35 */
+{
+    "_id" : "UT",
+    "totalpop" : 1722850
+}
+
+/* 36 */
+{
+    "_id" : "NE",
+    "totalpop" : 1578139
+}
+
+/* 37 */
+{
+    "_id" : "NM",
+    "totalpop" : 1515069
+}
+
+/* 38 */
+{
+    "_id" : "ME",
+    "totalpop" : 1226648
+}
+
+/* 39 */
+{
+    "_id" : "NV",
+    "totalpop" : 1201833
+}
+
+/* 40 */
+{
+    "_id" : "NH",
+    "totalpop" : 1109252
+}
+
+/* 41 */
+{
+    "_id" : "HI",
+    "totalpop" : 1108229
+}
+
+/* 42 */
+{
+    "_id" : "ID",
+    "totalpop" : 1006749
+}
+
+/* 43 */
+{
+    "_id" : "RI",
+    "totalpop" : 1003218
+}
+
+/* 44 */
+{
+    "_id" : "MT",
+    "totalpop" : 798948
+}
+
+/* 45 */
+{
+    "_id" : "SD",
+    "totalpop" : 695397
+}
+
+/* 46 */
+{
+    "_id" : "DE",
+    "totalpop" : 666168
+}
+
+/* 47 */
+{
+    "_id" : "ND",
+    "totalpop" : 638272
+}
+
+/* 48 */
+{
+    "_id" : "DC",
+    "totalpop" : 606900
+}
+
+/* 49 */
+{
+    "_id" : "VT",
+    "totalpop" : 562758
+}
+
+/* 50 */
+{
+    "_id" : "AK",
+    "totalpop" : 544698
+}
+
+
+db.zipcodes.aggregate([
+
+{$group:{_id:"$state" ,totalpop: {$sum:"$pop"}}},
+{$sort:{"totalpop": -1}},
+{$limit: 3}])
+
+/* 1 */
+{
+    "_id" : "CA",
+    "totalpop" : 29754890
+}
+
+/* 2 */
+{
+    "_id" : "NY",
+    "totalpop" : 17990402
+}
+
+/* 3 */
+{
+    "_id" : "TX",
+    "totalpop" : 16984601
+}
+
+
+
+db.zipcodes.aggregate([
+
+{$group:{_id:{city:"$city" ,state:"$state"} ,totalpop: {$sum:"$pop"}}}
+
+])
+
+/* 1 */
+{
+    "_id" : {
+        "city" : "NATCHEZ",
+        "state" : "LA"
+    },
+    "totalpop" : 2070
+}
+
+/* 2 */
+{
+    "_id" : {
+        "city" : "LAGRANGE",
+        "state" : "ME"
+    },
+    "totalpop" : 707
+}
+
+/* 3 */
+{
+    "_id" : {
+        "city" : "OCEAN GROVE",
+        "state" : "NJ"
+    },
+    "totalpop" : 4723
+}
+
+/* 4 */
+{
+    "_id" : {
+        "city" : "LULA",
+        "state" : "GA"
+    },
+    "totalpop" : 3365
+}
+
+/* 5 */
+{
+    "_id" : {
+        "city" : "HARRISVILLE",
+        "state" : "MS"
+    },
+    "totalpop" : 2885
+}
+
+/* 6 */
+{
+    "_id" : {
+        "city" : "SEDALIA",
+        "state" : "KY"
+    },
+    "totalpop" : 1983
+}
+
+/* 7 */
+{
+    "_id" : {
+        "city" : "AMBOY",
+        "state" : "IN"
+    },
+    "totalpop" : 1555
+}
+
+/* 8 */
+{
+    "_id" : {
+        "city" : "SCHOOLCRAFT",
+        "state" : "MI"
+    },
+    "totalpop" : 5324
+}
+
+/* 9 */
+{
+    "_id" : {
+        "city" : "NORTH FREEDOM",
+        "state" : "WI"
+    },
+    "totalpop" : 1858
+}
+
+/* 10 */
+{
+    "_id" : {
+        "city" : "PINE VALLEY",
+        "state" : "NY"
+    },
+    "totalpop" : 252
+}
+
+/* 11 */
+{
+    "_id" : {
+        "city" : "LADOGA",
+        "state" : "IN"
+    },
+    "totalpop" : 2405
+}
+
+/* 12 */
+{
+    "_id" : {
+        "city" : "PLEASANT HALL",
+        "state" : "PA"
+    },
+    "totalpop" : 366
+}
+
+/* 13 */
+{
+    "_id" : {
+        "city" : "NEW HRADEC",
+        "state" : "ND"
+    },
+    "totalpop" : 18751
+}
+
+/* 14 */
+{
+    "_id" : {
+        "city" : "LAKESIDE",
+        "state" : "VA"
+    },
+    "totalpop" : 30611
+}
+
+/* 15 */
+{
+    "_id" : {
+        "city" : "AVILLA",
+        "state" : "MO"
+    },
+    "totalpop" : 678
+}
+
+/* 16 */
+{
+    "_id" : {
+        "city" : "MORRILL",
+        "state" : "KS"
+    },
+    "totalpop" : 591
+}
+
+/* 17 */
+{
+    "_id" : {
+        "city" : "NEW CAMBRIA",
+        "state" : "KS"
+    },
+    "totalpop" : 390
+}
+
+/* 18 */
+{
+    "_id" : {
+        "city" : "MUSELLA",
+        "state" : "GA"
+    },
+    "totalpop" : 121
+}
+
+/* 19 */
+{
+    "_id" : {
+        "city" : "FREEBURG",
+        "state" : "IL"
+    },
+    "totalpop" : 5837
+}
+
+/* 20 */
+{
+    "_id" : {
+        "city" : "BONANZA",
+        "state" : "TX"
+    },
+    "totalpop" : 5302
+}
+
+/* 21 */
+{
+    "_id" : {
+        "city" : "FISHING BRIDGE",
+        "state" : "WY"
+    },
+    "totalpop" : 443
+}
+
+/* 22 */
+{
+    "_id" : {
+        "city" : "DARLINGTON",
+        "state" : "ID"
+    },
+    "totalpop" : 12
+}
+
+/* 23 */
+{
+    "_id" : {
+        "city" : "SONOMA",
+        "state" : "CA"
+    },
+    "totalpop" : 30443
+}
+
+/* 24 */
+{
+    "_id" : {
+        "city" : "SUQUAMISH",
+        "state" : "WA"
+    },
+    "totalpop" : 1880
+}
+
+/* 25 */
+{
+    "_id" : {
+        "city" : "MOSSYROCK",
+        "state" : "WA"
+    },
+    "totalpop" : 1390
+}
+
+/* 26 */
+{
+    "_id" : {
+        "city" : "STEVENS POTTERY",
+        "state" : "GA"
+    },
+    "totalpop" : 5415
+}
+
+/* 27 */
+{
+    "_id" : {
+        "city" : "ONIA",
+        "state" : "AR"
+    },
+    "totalpop" : 444
+}
+
+/* 28 */
+{
+    "_id" : {
+        "city" : "MELVILLE",
+        "state" : "NY"
+    },
+    "totalpop" : 14534
+}
+
+/* 29 */
+{
+    "_id" : {
+        "city" : "TITUSVILLE",
+        "state" : "FL"
+    },
+    "totalpop" : 48565
+}
+
+/* 30 */
+{
+    "_id" : {
+        "city" : "LITTLE NECK",
+        "state" : "NY"
+    },
+    "totalpop" : 23135
+}
+
+/* 31 */
+{
+    "_id" : {
+        "city" : "CLARK",
+        "state" : "NJ"
+    },
+    "totalpop" : 14973
+}
+
+/* 32 */
+{
+    "_id" : {
+        "city" : "THOMPSON",
+        "state" : "OH"
+    },
+    "totalpop" : 2668
+}
+
+/* 33 */
+{
+    "_id" : {
+        "city" : "LINDEN",
+        "state" : "IN"
+    },
+    "totalpop" : 1274
+}
+
+/* 34 */
+{
+    "_id" : {
+        "city" : "WHITACRE",
+        "state" : "VA"
+    },
+    "totalpop" : 1229
+}
+
+/* 35 */
+{
+    "_id" : {
+        "city" : "MELROSE",
+        "state" : "TN"
+    },
+    "totalpop" : 12448
+}
+
+/* 36 */
+{
+    "_id" : {
+        "city" : "CARSON",
+        "state" : "IA"
+    },
+    "totalpop" : 1398
+}
+
+/* 37 */
+{
+    "_id" : {
+        "city" : "OLNEY",
+        "state" : "MD"
+    },
+    "totalpop" : 20376
+}
+
+/* 38 */
+{
+    "_id" : {
+        "city" : "TALKEETNA",
+        "state" : "AK"
+    },
+    "totalpop" : 1420
+}
+
+/* 39 */
+{
+    "_id" : {
+        "city" : "TAMPA",
+        "state" : "KS"
+    },
+    "totalpop" : 211
+}
+
+/* 40 */
+{
+    "_id" : {
+        "city" : "CHILLICOTHE",
+        "state" : "TX"
+    },
+    "totalpop" : 1186
+}
+
+/* 41 */
+{
+    "_id" : {
+        "city" : "ELMO",
+        "state" : "MO"
+    },
+    "totalpop" : 481
+}
+
+/* 42 */
+{
+    "_id" : {
+        "city" : "PLYMOUTH",
+        "state" : "OH"
+    },
+    "totalpop" : 4122
+}
+
+/* 43 */
+{
+    "_id" : {
+        "city" : "HIGHLANDS",
+        "state" : "TX"
+    },
+    "totalpop" : 17005
+}
+
+/* 44 */
+{
+    "_id" : {
+        "city" : "SOUTH HAVEN",
+        "state" : "KS"
+    },
+    "totalpop" : 710
+}
+
+/* 45 */
+{
+    "_id" : {
+        "city" : "MINDEN",
+        "state" : "LA"
+    },
+    "totalpop" : 21954
+}
+
+/* 46 */
+{
+    "_id" : {
+        "city" : "NEW BRIGHTON",
+        "state" : "PA"
+    },
+    "totalpop" : 12222
+}
+
+/* 47 */
+{
+    "_id" : {
+        "city" : "REYNOLDS STATION",
+        "state" : "KY"
+    },
+    "totalpop" : 1389
+}
+
+/* 48 */
+{
+    "_id" : {
+        "city" : "ORLEANS",
+        "state" : "IL"
+    },
+    "totalpop" : 501
+}
+
+/* 49 */
+{
+    "_id" : {
+        "city" : "LEOPOLD",
+        "state" : "MO"
+    },
+    "totalpop" : 303
+}
+
+/* 50 */
+{
+    "_id" : {
+        "city" : "WARNE",
+        "state" : "NC"
+    },
+    "totalpop" : 457
+}
+
+
+db.zipcodes.aggregate([
+
+{$group:{_id:{city:"$city" ,state:"$state"} ,totalpop: {$sum:"$pop"}}},
+{$sort: {totalpop:-1}}])
+
+{
+    "_id" : {
+        "city" : "CHICAGO",
+        "state" : "IL"
+    },
+    "totalpop" : 2452177
+}
+
+/* 2 */
+{
+    "_id" : {
+        "city" : "BROOKLYN",
+        "state" : "NY"
+    },
+    "totalpop" : 2300504
+}
+
+/* 3 */
+{
+    "_id" : {
+        "city" : "LOS ANGELES",
+        "state" : "CA"
+    },
+    "totalpop" : 2102295
+}
+
+/* 4 */
+{
+    "_id" : {
+        "city" : "HOUSTON",
+        "state" : "TX"
+    },
+    "totalpop" : 2095918
+}
+
+/* 5 */
+{
+    "_id" : {
+        "city" : "PHILADELPHIA",
+        "state" : "PA"
+    },
+    "totalpop" : 1610956
+}
+
+/* 6 */
+{
+    "_id" : {
+        "city" : "NEW YORK",
+        "state" : "NY"
+    },
+    "totalpop" : 1476790
+}
+
+/* 7 */
+{
+    "_id" : {
+        "city" : "BRONX",
+        "state" : "NY"
+    },
+    "totalpop" : 1209548
+}
+
+/* 8 */
+{
+    "_id" : {
+        "city" : "SAN DIEGO",
+        "state" : "CA"
+    },
+    "totalpop" : 1049298
+}
+
+/* 9 */
+{
+    "_id" : {
+        "city" : "DETROIT",
+        "state" : "MI"
+    },
+    "totalpop" : 963243
+}
+
+/* 10 */
+{
+    "_id" : {
+        "city" : "DALLAS",
+        "state" : "TX"
+    },
+    "totalpop" : 940191
+}
+
+/* 11 */
+{
+    "_id" : {
+        "city" : "PHOENIX",
+        "state" : "AZ"
+    },
+    "totalpop" : 890853
+}
+
+/* 12 */
+{
+    "_id" : {
+        "city" : "MIAMI",
+        "state" : "FL"
+    },
+    "totalpop" : 825232
+}
+
+/* 13 */
+{
+    "_id" : {
+        "city" : "SAN JOSE",
+        "state" : "CA"
+    },
+    "totalpop" : 816653
+}
+
+/* 14 */
+{
+    "_id" : {
+        "city" : "SAN ANTONIO",
+        "state" : "TX"
+    },
+    "totalpop" : 811792
+}
+
+/* 15 */
+{
+    "_id" : {
+        "city" : "BALTIMORE",
+        "state" : "MD"
+    },
+    "totalpop" : 733081
+}
+
+/* 16 */
+{
+    "_id" : {
+        "city" : "SAN FRANCISCO",
+        "state" : "CA"
+    },
+    "totalpop" : 723993
+}
+
+/* 17 */
+{
+    "_id" : {
+        "city" : "MEMPHIS",
+        "state" : "TN"
+    },
+    "totalpop" : 632837
+}
+
+/* 18 */
+{
+    "_id" : {
+        "city" : "SACRAMENTO",
+        "state" : "CA"
+    },
+    "totalpop" : 628279
+}
+
+/* 19 */
+{
+    "_id" : {
+        "city" : "JACKSONVILLE",
+        "state" : "FL"
+    },
+    "totalpop" : 610160
+}
+
+/* 20 */
+{
+    "_id" : {
+        "city" : "ATLANTA",
+        "state" : "GA"
+    },
+    "totalpop" : 609591
+}
+
+/* 21 */
+{
+    "_id" : {
+        "city" : "WASHINGTON",
+        "state" : "DC"
+    },
+    "totalpop" : 606879
+}
+
+/* 22 */
+{
+    "_id" : {
+        "city" : "LAS VEGAS",
+        "state" : "NV"
+    },
+    "totalpop" : 597557
+}
+
+/* 23 */
+{
+    "_id" : {
+        "city" : "MILWAUKEE",
+        "state" : "WI"
+    },
+    "totalpop" : 597324
+}
+
+/* 24 */
+{
+    "_id" : {
+        "city" : "TUCSON",
+        "state" : "AZ"
+    },
+    "totalpop" : 586451
+}
+
+/* 25 */
+{
+    "_id" : {
+        "city" : "CLEVELAND",
+        "state" : "OH"
+    },
+    "totalpop" : 536759
+}
+
+/* 26 */
+{
+    "_id" : {
+        "city" : "AUSTIN",
+        "state" : "TX"
+    },
+    "totalpop" : 530049
+}
+
+/* 27 */
+{
+    "_id" : {
+        "city" : "COLUMBUS",
+        "state" : "OH"
+    },
+    "totalpop" : 520096
+}
+
+/* 28 */
+{
+    "_id" : {
+        "city" : "SEATTLE",
+        "state" : "WA"
+    },
+    "totalpop" : 520096
+}
+
+/* 29 */
+{
+    "_id" : {
+        "city" : "PORTLAND",
+        "state" : "OR"
+    },
+    "totalpop" : 518543
+}
+
+/* 30 */
+{
+    "_id" : {
+        "city" : "EL PASO",
+        "state" : "TX"
+    },
+    "totalpop" : 511351
+}
+
+/* 31 */
+{
+    "_id" : {
+        "city" : "TAMPA",
+        "state" : "FL"
+    },
+    "totalpop" : 498997
+}
+
+/* 32 */
+{
+    "_id" : {
+        "city" : "NEW ORLEANS",
+        "state" : "LA"
+    },
+    "totalpop" : 496937
+}
+
+/* 33 */
+{
+    "_id" : {
+        "city" : "CHARLOTTE",
+        "state" : "NC"
+    },
+    "totalpop" : 465833
+}
+
+/* 34 */
+{
+    "_id" : {
+        "city" : "FORT WORTH",
+        "state" : "TX"
+    },
+    "totalpop" : 451415
+}
+
+/* 35 */
+{
+    "_id" : {
+        "city" : "DENVER",
+        "state" : "CO"
+    },
+    "totalpop" : 451182
+}
+
+/* 36 */
+{
+    "_id" : {
+        "city" : "ALBUQUERQUE",
+        "state" : "NM"
+    },
+    "totalpop" : 449584
+}
+
+/* 37 */
+{
+    "_id" : {
+        "city" : "SAINT LOUIS",
+        "state" : "MO"
+    },
+    "totalpop" : 397802
+}
+
+/* 38 */
+{
+    "_id" : {
+        "city" : "HONOLULU",
+        "state" : "HI"
+    },
+    "totalpop" : 396643
+}
+
+/* 39 */
+{
+    "_id" : {
+        "city" : "ROCHESTER",
+        "state" : "NY"
+    },
+    "totalpop" : 396013
+}
+
+/* 40 */
+{
+    "_id" : {
+        "city" : "TULSA",
+        "state" : "OK"
+    },
+    "totalpop" : 389072
+}
+
+/* 41 */
+{
+    "_id" : {
+        "city" : "VIRGINIA BEACH",
+        "state" : "VA"
+    },
+    "totalpop" : 385080
+}
+
+/* 42 */
+{
+    "_id" : {
+        "city" : "STATEN ISLAND",
+        "state" : "NY"
+    },
+    "totalpop" : 378977
+}
+
+/* 43 */
+{
+    "_id" : {
+        "city" : "BUFFALO",
+        "state" : "NY"
+    },
+    "totalpop" : 375479
+}
+
+/* 44 */
+{
+    "_id" : {
+        "city" : "OKLAHOMA CITY",
+        "state" : "OK"
+    },
+    "totalpop" : 368141
+}
+
+/* 45 */
+{
+    "_id" : {
+        "city" : "KANSAS CITY",
+        "state" : "MO"
+    },
+    "totalpop" : 360182
+}
+
+/* 46 */
+{
+    "_id" : {
+        "city" : "OMAHA",
+        "state" : "NE"
+    },
+    "totalpop" : 358930
+}
+
+/* 47 */
+{
+    "_id" : {
+        "city" : "NASHVILLE",
+        "state" : "TN"
+    },
+    "totalpop" : 349822
+}
+
+/* 48 */
+{
+    "_id" : {
+        "city" : "INDIANAPOLIS",
+        "state" : "IN"
+    },
+    "totalpop" : 348868
+}
+
+/* 49 */
+{
+    "_id" : {
+        "city" : "FRESNO",
+        "state" : "CA"
+    },
+    "totalpop" : 347905
+}
+
+/* 50 */
+{
+    "_id" : {
+        "city" : "MINNEAPOLIS",
+        "state" : "MN"
+    },
+    "totalpop" : 344719
+}
+
+
+db.zipcodes.aggregate([
+
+{$group:{_id:{city:"$city" ,state:"$state"} ,totalpop: {$sum:"$pop"}}},
+{$sort: {totalpop:-1}},
+{$limit: 3}])
+
+/* 1 */
+{
+    "_id" : {
+        "city" : "CHICAGO",
+        "state" : "IL"
+    },
+    "totalpop" : 2452177
+}
+
+/* 2 */
+{
+    "_id" : {
+        "city" : "BROOKLYN",
+        "state" : "NY"
+    },
+    "totalpop" : 2300504
+}
+
+/* 3 */
+{
+    "_id" : {
+        "city" : "LOS ANGELES",
+        "state" : "CA"
+    },
+    "totalpop" : 2102295
+}
+
+db.zipcodes.aggregate([
+
+{$group:{_id:{city:"$city" ,state:"$state"} ,totalpop: {$sum:"$pop"}}},
+{$sort: {totalpop:-1}},
+{$limit: 3}
+])
+
+/* 1 */
+{
+    "_id" : {
+        "city" : "CHICAGO",
+        "state" : "IL"
+    },
+    "totalpop" : 2452177
+}
+
+/* 2 */
+{
+    "_id" : {
+        "city" : "BROOKLYN",
+        "state" : "NY"
+    },
+    "totalpop" : 2300504
+}
+
+/* 3 */
+{
+    "_id" : {
+        "city" : "LOS ANGELES",
+        "state" : "CA"
+    },
+    "totalpop" : 2102295
+}
+
+
+db.zipcodes.aggregate([
+{$group:{_id:{state:"$state",city:"$city"},pop:
+{$sum:"$pop"}}},
+{$group:{_id:"$_id.state",avgCityPop:{$avg:"$pop"}}}])
+
+/* 1 */
+{
+    "_id" : "MD",
+    "avgCityPop" : 12615.7757255937
+}
+
+/* 2 */
+{
+    "_id" : "NC",
+    "avgCityPop" : 10622.8157051282
+}
+
+/* 3 */
+{
+    "_id" : "WY",
+    "avgCityPop" : 3384.53731343284
+}
+
+/* 4 */
+{
+    "_id" : "VT",
+    "avgCityPop" : 2315.87654320988
+}
+
+/* 5 */
+{
+    "_id" : "AZ",
+    "avgCityPop" : 20591.1685393258
+}
+
+/* 6 */
+{
+    "_id" : "AK",
+    "avgCityPop" : 2976.49180327869
+}
+
+/* 7 */
+{
+    "_id" : "ND",
+    "avgCityPop" : 1645.03092783505
+}
+
+/* 8 */
+{
+    "_id" : "MO",
+    "avgCityPop" : 5672.19533851276
+}
+
+/* 9 */
+{
+    "_id" : "AR",
+    "avgCityPop" : 4175.35523978686
+}
+
+/* 10 */
+{
+    "_id" : "MN",
+    "avgCityPop" : 5372.21375921376
+}
+
+/* 11 */
+{
+    "_id" : "FL",
+    "avgCityPop" : 27400.9589632829
+}
+
+/* 12 */
+{
+    "_id" : "PA",
+    "avgCityPop" : 8679.06720233747
+}
+
+/* 13 */
+{
+    "_id" : "CA",
+    "avgCityPop" : 27756.427238806
+}
+
+/* 14 */
+{
+    "_id" : "NH",
+    "avgCityPop" : 5232.32075471698
+}
+
+/* 15 */
+{
+    "_id" : "NJ",
+    "avgCityPop" : 15775.893877551
+}
+
+/* 16 */
+{
+    "_id" : "ME",
+    "avgCityPop" : 3006.49019607843
+}
+
+/* 17 */
+{
+    "_id" : "KS",
+    "avgCityPop" : 3819.88425925926
+}
+
+/* 18 */
+{
+    "_id" : "IN",
+    "avgCityPop" : 9271.13043478261
+}
+
+/* 19 */
+{
+    "_id" : "MT",
+    "avgCityPop" : 2593.98701298701
+}
+
+/* 20 */
+{
+    "_id" : "UT",
+    "avgCityPop" : 9518.50828729282
+}
+
+/* 21 */
+{
+    "_id" : "GA",
+    "avgCityPop" : 11547.6221033868
+}
+
+/* 22 */
+{
+    "_id" : "AL",
+    "avgCityPop" : 7907.21526418787
+}
+
+/* 23 */
+{
+    "_id" : "WA",
+    "avgCityPop" : 12258.6700251889
+}
+
+/* 24 */
+{
+    "_id" : "SD",
+    "avgCityPop" : 1839.6746031746
+}
+
+/* 25 */
+{
+    "_id" : "MS",
+    "avgCityPop" : 7524.02339181287
+}
+
+/* 26 */
+{
+    "_id" : "HI",
+    "avgCityPop" : 15831.8428571429
+}
+
+/* 27 */
+{
+    "_id" : "OK",
+    "avgCityPop" : 6155.74363992172
+}
+
+/* 28 */
+{
+    "_id" : "NV",
+    "avgCityPop" : 18209.5909090909
+}
+
+/* 29 */
+{
+    "_id" : "IA",
+    "avgCityPop" : 3123.08211473566
+}
+
+/* 30 */
+{
+    "_id" : "WI",
+    "avgCityPop" : 7323.00748502994
+}
+
+/* 31 */
+{
+    "_id" : "IL",
+    "avgCityPop" : 9954.33449477352
+}
+
+/* 32 */
+{
+    "_id" : "CO",
+    "avgCityPop" : 9981.07575757576
+}
+
+/* 33 */
+{
+    "_id" : "KY",
+    "avgCityPop" : 4767.16472114137
+}
+
+/* 34 */
+{
+    "_id" : "MA",
+    "avgCityPop" : 14855.3703703704
+}
+
+/* 35 */
+{
+    "_id" : "TN",
+    "avgCityPop" : 9656.3504950495
+}
+
+/* 36 */
+{
+    "_id" : "OH",
+    "avgCityPop" : 12700.8395784543
+}
+
+/* 37 */
+{
+    "_id" : "SC",
+    "avgCityPop" : 11139.6261980831
+}
+
+/* 38 */
+{
+    "_id" : "ID",
+    "avgCityPop" : 4320.81115879828
+}
+
+/* 39 */
+{
+    "_id" : "MI",
+    "avgCityPop" : 12087.5123537061
+}
+
+/* 40 */
+{
+    "_id" : "DE",
+    "avgCityPop" : 14481.9130434783
+}
+
+/* 41 */
+{
+    "_id" : "DC",
+    "avgCityPop" : 303450.0
+}
+
+/* 42 */
+{
+    "_id" : "NY",
+    "avgCityPop" : 13131.6802919708
+}
+
+/* 43 */
+{
+    "_id" : "CT",
+    "avgCityPop" : 14674.625
+}
+
+/* 44 */
+{
+    "_id" : "NE",
+    "avgCityPop" : 3034.88269230769
+}
+
+/* 45 */
+{
+    "_id" : "WV",
+    "avgCityPop" : 2771.47758887172
+}
+
+/* 46 */
+{
+    "_id" : "OR",
+    "avgCityPop" : 8262.56104651163
+}
+
+/* 47 */
+{
+    "_id" : "NM",
+    "avgCityPop" : 5872.36046511628
+}
+
+/* 48 */
+{
+    "_id" : "VA",
+    "avgCityPop" : 8526.17793103448
+}
+
+/* 49 */
+{
+    "_id" : "RI",
+    "avgCityPop" : 19292.6538461538
+}
+
+/* 50 */
+{
+    "_id" : "LA",
+    "avgCityPop" : 10465.4962779156
+}
+
+
+db.zipcodes.aggregate([
+{$group:{_id:{state:"$state",city:"$city"},pop:
+{$sum:"$pop"}}},
+{$group:{_id:"$_id.state",avgCityPop:{$avg:"$pop"}}},{$sort:{avgCityPop:-1}},
+{$limit: 3}
+])
+
+{
+    "_id" : "DC",
+    "avgCityPop" : 303450.0
+}
+
+/* 2 */
+{
+    "_id" : "CA",
+    "avgCityPop" : 27756.427238806
+}
+
+/* 3 */
+{
+    "_id" : "FL",
+    "avgCityPop" : 27400.9589632829
+}
