@@ -1,0 +1,192 @@
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~ (master)
+$ cd Desktop
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop (master)
+$ cd Assignments
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Yojana/Desktop/Assignments/.git/
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git branch js-assignments
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ gut checkout js-assignments
+bash: gut: command not found
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git status
+On branch js-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        js1.js
+        js2.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git add *.js
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git commit -m "added JS file"
+[js-assignments d582483] added JS file
+ 2 files changed, 2 insertions(+)
+ create mode 100644 js1.js
+ create mode 100644 js2.js
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git status
+On branch js-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git add README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git commit -m "changed readme file"
+[js-assignments 501736a] changed readme file
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git add README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git commit -m "Made changes in line 1 of readme"
+[master 8bb626e] Made changes in line 1 of readme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git add README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git commit -m "Some changes are made in readme "
+[js-assignments 0c96e65] Some changes are made in readme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git add README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git commit -m "Changed a line in readme"
+[master d67c821] Changed a line in readme
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git status
+On branch js-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   js1.js
+        modified:   js2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git add *.js
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git commit -m "Changes JS  files"
+[js-assignments 4cd11ea] Changes JS  files
+ 2 files changed, 35 insertions(+), 2 deletions(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git merge js-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master|MERGING)
+$ git checkout js-assignments
+error: you need to resolve your current index first
+README.txt: needs merge
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   js1.js
+        new file:   js2.js
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.txt
+
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master|MERGING)
+$ git add README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master|MERGING)
+$ git commit -m "Changes made"
+[master 079eca7] Changes made
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git merge js-assignments
+Already up to date.
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git branch -d js-assignments
+Deleted branch js-assignments (was 4cd11ea).
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$

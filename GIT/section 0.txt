@@ -1,0 +1,240 @@
+Yojana@LAPTOP-17QTC8LS MINGW64 ~ (master)
+$ cd Desktop
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop (master)
+$ cd project_dir
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Yojana/Desktop/project_dir/.git/
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git add index.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "committing the file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Yojana@LAPTOP-17QTC8LS.(none)')
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git config --global user.email "yojanagajavelli2000@gmail.com"
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git config --global user.name "yojana512"
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "committing the file"
+[master (root-commit) c4f7885] committing the file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ touch .gitignore
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git add index.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "commit index file"
+[master 544edfd] commit index file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git log
+commit 544edfdbbcd1533ed777ba08a64516d26ba86488 (HEAD -> master)
+Author: yojana512 <yojanagajavelli2000@gmail.com>
+Date:   Thu Jul 29 14:38:13 2021 +0530
+
+    commit index file
+
+commit c4f7885487808611a84b0a6f794eb01930b7d642
+Author: yojana512 <yojanagajavelli2000@gmail.com>
+Date:   Thu Jul 29 14:02:17 2021 +0530
+
+    committing the file
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git add index.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git revert HEAD
+[master 2e559ba] Revert "commit index file"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git add index.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git add index.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git revert HEAD
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "index file commit"
+[master 6fad8d9] index file commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git revert HEAD
+[master 6606e3f] Revert "index file commit"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git config --global alias.myadd add
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git myadd index.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git add .gitignore
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "commit file"
+[master dc830d3] commit file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git myadd index.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git revert HEAD
+Removing .gitignore
+[master 779953c] Revert "commit file"
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 .gitignore
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$

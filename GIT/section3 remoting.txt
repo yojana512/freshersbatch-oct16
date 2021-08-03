@@ -1,0 +1,58 @@
+Yojana@LAPTOP-17QTC8LS MINGW64 ~ (master)
+$ cd Desktop
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop (master)
+$ cd project_dir
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Yojana/Desktop/project_dir/.git/
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git add .
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   info.txt
+
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git commit "New commit"
+error: pathspec 'New commit' did not match any file(s) known to git
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git commit -m "First commit"
+[master dd7ebf9] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 info.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git remote add origin https://github.com/yojana512/freshersbatch-oct16.git
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/yojana512/freshersbatch-oct16.git'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (master)
+$ git branch -M main
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (main)
+$ git push -u origin main
+fatal: Response status code does not indicate success: 401 (Unauthorized).
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (16/16), 1.41 KiB | 722.00 KiB/s, done.
+Total 16 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/yojana512/freshersbatch-oct16.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/project_dir (main)
+$

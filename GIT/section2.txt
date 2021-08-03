@@ -1,0 +1,157 @@
+Yojana@LAPTOP-17QTC8LS MINGW64 ~ (master)
+$ cd Desktop
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop (master)
+$ cd Assignments
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Yojana/Desktop/Assignments/.git/
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git branch css-assignments
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git status
+On branch css-assignments
+nothing to commit, working tree clean
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git status
+On branch css-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        css1.css
+        css2.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git add *.css
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git commit -m "added css files"
+[css-assignments 34e8164] added css files
+ 2 files changed, 2 insertions(+)
+ create mode 100644 css1.css
+ create mode 100644 css2.css
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git status
+On branch css-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git add README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git commit -m "made changes to README"
+[css-assignments 21b3030] made changes to README
+ 1 file changed, 1 insertion(+)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git add README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git commit -m "Made changes in line 3"
+[master 50f628b] Made changes in line 3
+ 1 file changed, 3 insertions(+)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git checkout css-assignment
+error: pathspec 'css-assignment' did not match any file(s) known to git
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git status
+On branch css-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css1.css
+        modified:   css2.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git add *.css
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git commit -m "made some changes to css files"
+[css-assignments a88f21a] made some changes to css files
+ 2 files changed, 15 insertions(+), 2 deletions(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git merge css-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   css1.css
+        new file:   css2.css
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.txt
+
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master|MERGING)
+$ git add README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master|MERGING)
+$ git commit -m "solving merge issue"
+[master 3431f63] solving merge issue
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git merge css-assignments
+Already up to date.
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git branch -d css-assignments
+Deleted branch css-assignments (was a88f21a).
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$

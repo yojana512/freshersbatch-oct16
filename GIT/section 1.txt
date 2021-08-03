@@ -1,0 +1,141 @@
+Yojana@LAPTOP-17QTC8LS MINGW64 ~ (master)
+$ cd Desktop
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop (master)
+$ mkdir Assignments
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop (master)
+$ cd Assignments
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git init
+Initialized empty Git repository in C:/Users/Yojana/Desktop/Assignments/.git/
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ touch README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git add README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git commit -m "Adding README.txt file"
+[master (root-commit) 88267c5] Adding README.txt file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.txt
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git branch html-assignments
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        html1.html
+        html2.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git add *.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   html1.html
+        new file:   html2.html
+
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git commit -m "added 2 new html assignments"
+[html-assignments fa245e8] added 2 new html assignments
+ 2 files changed, 2 insertions(+)
+ create mode 100644 html1.html
+ create mode 100644 html2.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   html1.html
+        modified:   html2.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git commit -m "added headings"
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   html1.html
+        modified:   html2.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git *.html
+git: 'html1.html' is not a git command. See 'git --help'.
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git *.html
+git: 'html1.html' is not a git command. See 'git --help'.
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git add *.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git commit -m "changes are made"
+[html-assignments 7886973] changes are made
+ 2 files changed, 16 insertions(+), 2 deletions(-)
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git merge html-assignments
+Updating 88267c5..7886973
+Fast-forward
+ html1.html | 8 ++++++++
+ html2.html | 8 ++++++++
+ 2 files changed, 16 insertions(+)
+ create mode 100644 html1.html
+ create mode 100644 html2.html
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$ git branch -d html-assignments
+Deleted branch html-assignments (was 7886973).
+
+Yojana@LAPTOP-17QTC8LS MINGW64 ~/Desktop/Assignments (master)
+$
