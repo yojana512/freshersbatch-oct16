@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table.center{
+margin-left:auto;
+margin-right:auto;
+}
+table,td {
+  border: 2px solid grey;
+  border-collapse: collapse;
+}
+table tr#ROW1{
+    background-color: darkcyan;
+    width: 10px;
+}
+table td#Col1{
+    background-color: darkgrey;
+    width: 10px;
+    height: 40px;
+}
+table td#Col2{
+    background-color: lightgrey;
+    width: 10px;
+    height: 40px;
+}
+</style>
+</head>
+<body>
+<table class="center" style="width:10%">
+  <tr id="ROW1">
+    <td colspan="2">top</td>
+  </tr>
+  <tr>
+    <td id="Col1">left</td>
+    <td id="Col2">right</td>
+  </tr>
+</table>
+</body>
+</html>
