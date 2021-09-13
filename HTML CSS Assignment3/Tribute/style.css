@@ -1,0 +1,14 @@
+body {
+  background-color: #27a3cc;
+  color: black;
+  font-family: Lucida Calligraphy;
+}
+h1{
+font-size:300;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
